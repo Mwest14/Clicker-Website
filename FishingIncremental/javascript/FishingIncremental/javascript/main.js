@@ -90,3 +90,31 @@ function incrementFish(){
   gameData.fish = gameData.fish + (fishSecond/10)
   document.getElementById("fishCaught").innerHTML = gameData.fish + " Fish Caught";
 }
+
+var expeditionCostFisherman = [1, 3, 8, 15];
+var expeditionCostGold = [10, 15, 25, 50];
+var expeditionCostTime = [1, 2, 5, 10];
+function startExpedition(){
+// alert(gameData.fisherman)
+if(gameData.fisherman < expeditionCostFisherman[0]){
+  document.getElementById("expeditionError").innerHTML = "Not Enough Funds";
+}
+else{
+  gameData.totalGold = gameData.totalGold - expeditionCostGold[0]
+  gameData.fisherman = gameData.fisherman - expeditionCostFisherman[0]
+  document.getElementById("fisherman").innerHTML = gameData.fisherman + " fisherman"
+  document.getElementById("totalGold").innerHTML = gameData.totalGold + " gold"
+  var width = 0;
+  var elem = document.getElementById("myBar");
+  var myVar = setInterval(function(){
+    if(width < 60){
+      width++;
+      elem.style.width = width + '%';
+    }
+    else{
+      gameData.fisherman = gameData.fisherman + expeditionCostFisherman[0]
+      gameData.totalGold = gameData.totalGold + expeditionCostGold[0]
+    }
+  },1000*expeditionCostTime[3]);
+}
+}
