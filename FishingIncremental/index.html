@@ -3,19 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Fishing Incremental</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
 
     <p id="fishCaught">0 Fish Caught</p>
-    <button onclick="catchFish()">Catch Fish</button><br><Br>
+    <button onclick="catchFish()">Catch Fish</button><br>
     <!-- <button onclick="buyFishPerClick()" id="perClickUpgrade">Upgrade Fishing Rod (Currently Level 1) Cost: 10 Gold</button> -->
-    <script src="javascript/main.js" charset="utf-8" type="text/javascript"></script>
+
+    <p id="fisherman">1 fisherman</p>
+    <p id="fishermanfishpersecond"></p>
+    <button onclick="fishermanMake()" id="buyFisherman">Buy Fisherman: 1 gold</button><div id="fishermanError"></div><br>
+    <button onclick="fishermanToVillagers()">Convert Fisherman to Villagers</button><div id="NotEnoughFunds"></div>
 
 
-    <p id="fisherman">0 fisherman</p> <p id="fishermanfishpersecond">Each Fisherman produces 1 fish every 2 seconds</p>
-    <button onclick="fishermanMake()">Buy Fisherman</button><br>
+    <p id="villagers">1 villagers</p>
+    <p id="totalGold">0 gold</p>
+    <p id="villagersgoldpersecond"></p>
+    <button onclick="villagersToFisherman()">Convert Villagers to Fisherman</button><div id="villagersError"><br>
 
-    <p id="villagers">0 villagers</p> <p id="villagersgoldpersecond">Each Villager produces 1 gold every 5 seconds</p>
-    <button onclick="villagersMake()">Convert Fisherman to villagers</button><br>
+      <p>Start An Expedition Today</p>
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+      <br>
+</div>
+      <button onclick="startExpedition()">Begin Expedition</button><p>Cost 1 fisherman and 10 Gold</p>
+      <div id="expeditionError"></div>
+
+
+
+      <script src="javascript/main.js" charset="utf-8" type="text/javascript"></script>
   </body>
+
 </html>
