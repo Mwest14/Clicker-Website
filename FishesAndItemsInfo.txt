@@ -1,0 +1,47 @@
+Special Fish
+
+-------- COMMON FISH ----------
+------Can Catch Anytime -----------
+---Only catch on user Click --------
+----- starts at .5% chance on click to catch one (1 in 200 chance) --------
+Cat Fish - Doubles Villagers Production (10 min)
+Trout - Doubles fish production (10 min)
+Salmon - Doubles Fish production (30 min) but cuts villagers production in half (30 min) 
+Bass - Doubles villagers production (30 min) but cuts Fish production in half (30 min) 
+Tuna - Changes one stat on item to new stat Can only use on Common and Rare Items
+
+------- RARE FISH --------------
+---Can only Catch if RARE or higher Fishing pole is Equiped----
+---Can find in Expeditions----
+---Starts at .01% chance on click to catch one (1 in 1000 chance)------
+Manta Ray - Doubles Villagers and Fisherman Production (30 min)
+HammerHead Shark - Doubles Fish production (60 min) but cuts villagers production in half (20 min) 
+Sting Ray - Doubles villagers production (60 min) but cuts Fish production in half (20 min)
+Jelly Fish - Decreases Cost of Upgrades by 10% (5 min)
+
+------- UNIQUE FISH ------------
+---Can only catch if Unique or higher Fishing pole is Equiped Along with Another Unique Item (Boots, Hat, or Bait)----
+---Can only find in Expeditions unless Fishing pole stats allow to find on click ----
+---Starts at .001% chance on click if you can find on click (1 in 10000 chance)----
+Great White Shark - Doubles Villagers and Fisherman Production (120 min)
+Giant Squid -  Doubles Fish production (180 min) And Clicks For you (1 per second for 60 minutes)
+Angler Fish - Increases Success Rate of Next Expedition (20%) (1 day cooldown)
+Blue Whale - Increases Gold Gained By Expeditions (200%) last 1 day
+
+------LEDGENDARY FISH ----------
+---Can only find in Expeditions ----
+---Can only catch if Ledgendary or higher Fishing pole is Equiped Along with 2 other Ledgendary Items (Boots, Hat, or Bait)----
+Megladon - Next Expediton Cost No Resources (2 day cooldown)
+Lochness Monster - Doubles All Items Stats For 1 Day
+Hydra - Doubles Villagers and Fisherman Production (240 min) And Clicks For you (1 per second for 120 minutes)
+Moby Dick - Triples Chance of Catching Mystic Fish on Next Expedition and Will catch two Rare or higher Fish on next Expedition (Only if Expedition allows Rares to be caught)
+Siren - Rerolls stats of item but keeps Item same rarity
+
+------ MYSTIC FISH ----------
+---Can only find in Expeditions ----
+---Can only catch if All Ledgendary Equipment is Equipped and a Mystic Fishing pole----
+Cthulhu - Adds Another Stat to a Item of your choice (Max 6 Stats on Item)
+Godzilla - Turns an Item into a mystic Item rerolling All Stats
+Sharktopus - Doubles Villagers and Fisherman Production (60 min) And Clicks For you (1 per second for 60 minutes) And Decreases Cost of Upgrades by 10% (60 min)
+And on Next Expedition and Will catch two Unique or higher Fish on next Expedition (Only if Expedition allows Uniques to be caught)
+Poseidon - Garuntees Success of Next Expediton Along with 300% gold gained from it
