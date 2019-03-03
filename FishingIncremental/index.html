@@ -1,39 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Fishing Incremental</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+<!-- Bootstrap CSS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
   </head>
+
   <body>
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-5">
     <p id="fishCaught">0 Fish Caught</p>
-    <button onclick="catchFish()">Catch Fish</button><br>
+    <button onclick="catchFish()" class="btn btn-info" id="catchFish">Catch Fish</button><br><br>
     <!-- <button onclick="buyFishPerClick()" id="perClickUpgrade">Upgrade Fishing Rod (Currently Level 1) Cost: 10 Gold</button> -->
+    <script src="js/main.js" charset="utf-8" type="text/javascript"></script>
+    <div id="error" class="error">
+    </div>
+ </div>
+    </div>
+    <p id="totalGold">0 Gold</p> <p id="goldPerSecond">Gold Buys stuff</p>
 
-    <p id="fisherman">1 fisherman</p>
-    <p id="fishermanfishpersecond"></p>
-    <button onclick="fishermanMake()" id="buyFisherman">Buy Fisherman: 1 gold</button><div id="fishermanError"></div><br>
-    <button onclick="fishermanToVillagers()">Convert Fisherman to Villagers</button><div id="NotEnoughFunds"></div>
+    <p id="fisherman">0 fisherman</p> <p id="fishermanfishpersecond">Each Fisherman produces 1 fish every 2 seconds</p>
+    <button onclick="fishermanMake()" class="btn btn-primary">Buy Fisherman</button><br>
 
+    <p id="villagers">0 villagers</p> <p id="villagersgoldpersecond">Each Villager produces 1 gold every 5 seconds</p>
+    <button onclick="villagersMake()" class="btn btn-primary">Convert Fisherman to villagers</button>
+    <button onclick="villagersTrade()" class="btn btn-primary">Convert Villagers to Fisherman</button><br>
+<div class="row">
+<br>
+<p>------------------Special Fish (will be moved)----------------------</p>
+<br>
+<input type="radio" id="CatFishCommonFish" name="consumableFish"/><label id="numberOfCatFish"># of Cat Fish:</label><br><br>
+<input type="radio" id="TroutCommonFish" name="consumableFish"/><label id="numberOfTroutFish"># of Trout Fish:</label><br><br>
+<input type="radio"id="SalmonCommonFish" name="consumableFish"/><label id="numberOfSalmonFish"># of Salmon Fish:</label><br><br>
+<input type="radio" id="BassCommonFish" name="consumableFish"/><label id="numberOfBassFish"># of Bass Fish:</label><br><br>
+<!-- <input type="radio" id="TunaCommonFish" name="tunaFish"/> # of Tuna:<br><br> -->
+<button class="btn btn-primary" id="consumeFish" onclick="consumeFish()">Consume Fish</button>
+<br>
+<p>------------------Special Fish (will be moved)----------------------</p>
+<br>
+      <h3 class="jumbotron text-center">Start An Expedition Today</h3>
 
-    <p id="villagers">1 villagers</p>
-    <p id="totalGold">0 gold</p>
-    <p id="villagersgoldpersecond"></p>
-    <button onclick="villagersToFisherman()">Convert Villagers to Fisherman</button><div id="villagersError"><br>
-
-      <p>Start An Expedition Today</p>
-      <div id="myProgress">
-        <div id="myBar"></div>
-      </div>
-      <br>
+      <div id="myProgress"><div id="myBar"></div></div>
+      <div class="col-sm">
+           <button onclick="startExpedition()" class="btn btn-primary">Begin Expedition</button>
+           <br>
+     </div>
+           <p>Cost 1 fisherman and 10 Gold</p>
+           <div id="expeditionError"></div>
 </div>
-      <button onclick="startExpedition()">Begin Expedition</button><p>Cost 1 fisherman and 10 Gold</p>
-      <div id="expeditionError"></div>
-
-
-
-      <script src="javascript/main.js" charset="utf-8" type="text/javascript"></script>
+         <script src="javascript/main.js" charset="utf-8" type="text/javascript"></script>
+  </div>
   </body>
-
 </html>
